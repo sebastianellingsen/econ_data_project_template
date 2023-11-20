@@ -23,7 +23,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 You can write about your plot here. You can also display the chart here:\bigskip
 
-```{r pressure, echo=FALSE, fig.height = 4, fig.width = 4, fig.align="center"}
+```{r pressure, echo=FALSE, warning = FALSE, fig.height = 4, fig.width = 4, fig.align="center"}
 ## Loading data 
 mpd2020 <- read_excel("data/mpd2020.xlsx", sheet = 4, skip = 1) %>% 
   dplyr::select(year, GBR) %>% 
