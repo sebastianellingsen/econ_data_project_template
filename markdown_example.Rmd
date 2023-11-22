@@ -27,7 +27,7 @@ You can write about your plot here. You can also display the chart here:\bigskip
 ## Loading data 
 mpd2020 <- read_excel("data/mpd2020.xlsx", sheet = 4, skip = 1) %>% 
   dplyr::select(year, GBR) %>% 
-  filter(year >= 1400) %>% 
+  filter(year >= 1500) %>% 
   rename(gdppc = GBR)
 
 ggplot(data = mpd2020, aes(x = year, y = gdppc))+
